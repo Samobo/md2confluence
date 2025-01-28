@@ -1,0 +1,15 @@
+[project]
+name = "md2confluence"
+version = "0.1.0"
+description = "Convert Markdown documents to Confluence pages"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "chardet==5.1.0",
+    "gitignorefile==1.1.2",
+    "mistune==0.8.4",
+    "PyYAML==6.0.1",
+    "requests==2.31.0",
+    "rich-argparse==1.0.0",
+    "rich==13.0.1",
+]
