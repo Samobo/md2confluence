@@ -40,19 +40,19 @@ To upload a document, you need to provide at least the following five parameters
 Example basic usage:
 
 ```bash
-uv run md2cf --host 'https://confluence.example.com' --username foo --password bar --space TEST document.md
+uv run md2cf --host 'https://confluence.example.com' --username foo --password bar --space 12345678 document.md
 ```
 
 Or, if using a token:
 
 ```bash
-uv run md2cf --host 'https://confluence.example.com' --token '2104v3ryl0ngt0k3n720' --space TEST document.md
+uv run md2cf --host 'https://confluence.example.com' --token '2104v3ryl0ngt0k3n720' --space 12345678 document.md
 ```
 
 Or, if using a token with Confluence Cloud:
 
 ```bash
-uv run md2cf --host 'https://confluence.example.com' --username foo --password '2104v3ryl0ngt0k3n720' --space TEST document.md
+uv run md2cf --host 'https://confluence.example.com' --username foo --password '2104v3ryl0ngt0k3n720' --space 12345678 document.md
 ```
 
 > :warning: Avoid entering your password (or token) as a command line parameter, as this is [generally a bad practice](https://unix.stackexchange.com/q/78734). Instead, when running the script interactively, omit the `--password` parameter and securely enter the password when prompted.
