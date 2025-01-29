@@ -1,7 +1,7 @@
 .EXPORT_ALL_VARIABLES:
-MD2CONFLUENCE_VERSION = 1.0.1
+MD2CONFLUENCE_VERSION = $(shell git describe --tags --always --dirty)
 
-.PHONY: build publish
+.PHONY: build publish release
 
 build:
 	docker buildx bake --load
