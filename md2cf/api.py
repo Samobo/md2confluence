@@ -102,7 +102,7 @@ class MinimalConfluence:
         elif title is not None:
             params = {"title": title}
             if space_id is not None:
-                params["spaceId"] = space_id
+                params["space-id"] = space_id
             response = self._get("api/v2/pages", params=params)
             try:
                 # A search by title/space doesn't return full page objects,
