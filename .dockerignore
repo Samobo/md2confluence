@@ -5,3 +5,5 @@ Dockerfile
 LICENSE
 README.md
 donotpush
+Makefile
+docker-bake.hcl
